@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Test" verbose="5">
+
+<listeners>
+		<listener class-name="com.qa.orangehrm.listeners.ExtentReport" />
+	</listeners>
+	
+	<test name="Orange Hrm Login Page Test">
+		
+		<!-- comment and uncomment: ctrl-shift-c -->
+		<classes>
+			<class name="com.qa.orangehrm.tests.LoginPageTest" />
+		</classes>
+	</test>
+
+	<test name="Pimp Page Test">
+		<parameter name="version" value="104.0.5112.80 "></parameter>
+		<parameter name="browser" value="chrome" />
+		<parameter name="url"
+			value="https://opensource-demo.orangehrmlive.com/index.php/auth/login" />
+
+		<classes>
+			<class name="com.qa.orangehrm.tests.PimPageTest" />
+		</classes>
+
+	</test>
+	
+	
+	<test name="Directory Test">
+		
+		<classes>
+			
+			<class name="com.qa.orangehrm.tests.DirectoryPageTest" />
+		</classes>
+		
+		
+	</test>
+
+</suite>
