@@ -1,10 +1,16 @@
+com\qa\orangehrm\pages\Leave.class
 com\qa\orangehrm\tests\AddEmployeePageTest.class
+com\qa\orangehrm\pages\LoginPage.class
 com\qa\orangehrm\listeners\ExtentReport.class
 com\qa\orangehrm\tests\LoginPageTest.class
 com\qa\orangehrm\tests\LeaveTest.class
 com\qa\orangehrm\base\BaseTest.class
+com\qa\orangehrm\pages\PunchInPage.class
 com\qa\orangehrm\tests\AddEmployeeTest.class
+com\qa\orangehrm\pages\Directory.class
 com\qa\orangehrm\tests\PimPageTest.class
+com\qa\orangehrm\pages\AddEmployeePage.class
 com\qa\orangehrm\listeners\MyListener.class
+com\qa\orangehrm\pages\PimPage.class
 com\qa\orangehrm\tests\DirectoryPageTest.class
 com\qa\orangehrm\tests\PunchInPageTest.class

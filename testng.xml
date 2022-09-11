@@ -22,7 +22,7 @@
 			value="https://opensource-demo.orangehrmlive.com/index.php/auth/login" />
 
 		<classes>
-			<class name="com.qa.orangehrm.tests.PimPageTest" />
+<!-- 			<class name="com.qa.orangehrm.tests.PimPageTest" /> -->
 		</classes>
 
 	</test>
@@ -32,7 +32,7 @@
 		
 		<classes>
 			
-			<class name="com.qa.orangehrm.tests.DirectoryPageTest" />
+<!-- 			<class name="com.qa.orangehrm.tests.DirectoryPageTest" /> -->
 		</classes>
 		
 		
