@@ -11,7 +11,7 @@
 		
 		<!-- comment and uncomment: ctrl-shift-c -->
 		<classes>
-<!-- 			<class name="com.qa.orangehrm.tests.LoginPageTest" /> -->
+			<class name="com.qa.orangehrm.tests.LoginPageTest" />
 		</classes>
 	</test>
 
@@ -32,7 +32,7 @@
 		
 		<classes>
 			
-<!-- 			<class name="com.qa.orangehrm.tests.DirectoryPageTest" /> -->
+			<class name="com.qa.orangehrm.tests.DirectoryPageTest" />
 		</classes>
 		
 		
