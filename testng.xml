@@ -11,7 +11,7 @@
 		
 		<!-- comment and uncomment: ctrl-shift-c -->
 		<classes>
-			<class name="com.qa.orangehrm.tests.LoginPageTest" />
+<!-- 			<class name="com.qa.orangehrm.tests.LoginPageTest" /> -->
 		</classes>
 	</test>
 
@@ -22,7 +22,7 @@
 			value="https://opensource-demo.orangehrmlive.com/index.php/auth/login" />
 
 		<classes>
-<!-- 			<class name="com.qa.orangehrm.tests.PimPageTest" /> -->
+			<class name="com.qa.orangehrm.tests.PimPageTest" />
 		</classes>
 
 	</test>
