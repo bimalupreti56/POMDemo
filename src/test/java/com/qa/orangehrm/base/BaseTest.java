@@ -20,6 +20,7 @@ import com.qa.orangehrm.pages.Leave;
 import com.qa.orangehrm.pages.LoginPage;
 import com.qa.orangehrm.pages.PimPage;
 import com.qa.orangehrm.pages.PunchInPage;
+import com.qa.orangehrm.pages.Timesheet;
 
 public class BaseTest {
 	
@@ -31,6 +32,7 @@ public class BaseTest {
 	public PunchInPage punchInPage;
 	public Directory dir;
 	public Leave leave;
+	public Timesheet timeSheet;
 	DriverFactory driverFact;
 	
 	
@@ -46,7 +48,7 @@ public class BaseTest {
 	
 	@AfterTest
 	public void tearDown() {
-		driver.quit();
+		//.quit();
 	}
 	
 	

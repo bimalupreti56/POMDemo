@@ -46,6 +46,10 @@ public class ElementUtil {
 	public void doClick(By locator) {
 		getElement(locator).click();
 	}
+	
+	public void doClick(WebElement elm) {
+		elm.click();
+	}
 
 	public String doGetElementText(By locator) {
 		return getElement(locator).getText();
@@ -267,6 +271,13 @@ public class ElementUtil {
 		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 		
 	}
+	
+	public WebElement waitForElementPresence(WebElement elm, int timeOut) {
+		WebDriverWait wait = new WebDriverWait(driver, timeOut);
+		return wait.until(ExpectedConditions.elementToBeClickable(elm));
+	}
+	
+
 
 	public void clickWhenReady(By locator, int timeOut) {
 		waitForElementToBeClickable(locator, timeOut).click();

@@ -36,7 +36,10 @@ public class LoginPage {
 	By punchIn = By.xpath("//*[@id=\"menu_attendance_punchIn\"]");
 	
 	By dir = By.xpath("//span[text()= 'Directory']");
-	//Page Actions
+	
+	//nav to timesheet locator
+	@FindBy(xpath = "//ul[@class = \"oxd-main-menu\"]/li[4]/a")
+	WebElement timeSheet;
 	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
@@ -58,10 +61,8 @@ public class LoginPage {
 	
 	public PimPage doLogin(String un, String pwd) {
 		
-		WebDriverWait wait = new WebDriverWait(driver,3);
-		wait.until(ExpectedConditions.elementToBeClickable(username));
+		elemUtil.waitForElementPresence(username, 5);
 		username.sendKeys(un);
-		
 		elemUtil.doSendKeys(password, pwd);
 		elemUtil.doClick(loginBtn);
 		return new PimPage(driver);		
@@ -97,6 +98,12 @@ public class LoginPage {
 		doLogin(un,pwd);
 		elemUtil.doClick(By.xpath("//*[@id=\"app\"]/div[1]/div[1]/aside/nav/div[2]/ul/li[3]/a"));
 		return new Leave(driver);
+	}
+	
+	public Timesheet navToTimeSheet(String un, String pwd) {
+		doLogin(un,pwd);
+		timeSheet.click();
+		return new Timesheet(driver);
 	}
 
 }

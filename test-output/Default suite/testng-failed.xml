@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.orangehrm.tests.DirectoryPageTest">
+      <class name="com.qa.orangehrm.tests.TimeSheetPageTest">
         <methods>
-          <include name="directoryPageSetUp"/>
+          <include name="navToTimeSheet"/>
+          <include name="editingHourTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="test"/>
         </methods>
-      </class> <!-- com.qa.orangehrm.tests.DirectoryPageTest -->
+      </class> <!-- com.qa.orangehrm.tests.TimeSheetPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
