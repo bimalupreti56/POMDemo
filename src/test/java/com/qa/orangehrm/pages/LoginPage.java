@@ -18,7 +18,7 @@ public class LoginPage {
 	private WebDriver driver;
 	private ElementUtil elemUtil;
 	
-	// By locators
+	// By locatorss
 	@FindBy(xpath = "//input[@name = 'username']") 
 	WebElement username;
 	//By username = By.xpath("//input[@name = 'username']");
