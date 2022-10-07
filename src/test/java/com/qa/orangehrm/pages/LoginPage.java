@@ -25,6 +25,7 @@ public class LoginPage {
 	By password = By.xpath("//input[@type = 'password']");	
 	By loginBtn = By.xpath("//button[@type = 'submit']");
 	By forgotPwd = By.xpath("//p[@class = 'oxd-text oxd-text--p orangehrm-login-forgot-header']");
+	By pimHeader = By.xpath("//h6[@class = 'oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module']");
 	
 	//locator to nav to employee page 
 	By pim = By.id("menu_pim_viewPimModule");
@@ -68,14 +69,7 @@ public class LoginPage {
 		return new PimPage(driver);		
 	}
 	
-	public AddEmployeePage navigateToAddEmpPage(String un, String pwd) {
 	
-		doLogin(un,pwd);
-		elemUtil.waitForElementToBeClickable(pim, 3);
-		elemUtil.doMoveToElement(pim);
-		elemUtil.doClick(addEmployee);
-		return new AddEmployeePage(driver);
-	}
 	
 	public PunchInPage navToPunchInPage() {
 		

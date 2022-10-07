@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.orangehrm.tests.TimeSheetPageTest">
+      <class name="com.qa.orangehrm.tests.PimPageTest">
         <methods>
-          <include name="navToTimeSheet"/>
-          <include name="editingHourTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="DashboardPageSetUp"/>
+          <include name="addEmployee" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- com.qa.orangehrm.tests.TimeSheetPageTest -->
+      </class> <!-- com.qa.orangehrm.tests.PimPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
